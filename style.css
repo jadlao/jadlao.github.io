@@ -1,0 +1,150 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #22242e;
+    background-color: #f2e0c2;
+}
+
+.intro, .about {
+    background-color: #d8b95d;
+    margin: 20px 5px 20px 5px;
+    position: relative;
+}
+
+.intro {
+    background-image: url(img/intro-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    /*background: radial-gradient(
+        circle,
+        rgb(221, 204, 6), 
+        #d8b95d
+    );*/
+}
+
+/* Navigation */
+.nav-top {
+    background-color: yellowgreen;
+    border-radius: 0;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links ul {
+    float: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    height: 50px;
+    margin-top: -10px;
+    color: #22242e;
+}
+
+.nav-links ul li:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    background-color: rgb(179, 239, 57);
+}
+
+/* Intro content */
+.hero {
+    height: 500px;
+    padding-top: 150px;
+}
+
+/* Linkedin, Github icons */
+.hero span i:first-child {
+    color: #c3332b;
+}
+
+.hero span:hover {
+    opacity: 0.7;
+}
+
+/* Work section */
+.work-title {
+    background-color: #c3332b;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.triangle {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 20px;
+    margin-left: -15px; /* Half the triangle width to keep it centered */
+    background-color: #c3332b;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.work-title-triangle {
+    bottom: -20px;
+}
+
+.work {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.work a {
+    background-color: #f2e0c2;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all .2s ease-in-out;
+    opacity: 0.9;
+    border: 0;
+}
+
+.work a:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.work img {
+    height: 300px;
+    width: 300px;
+}
+
+/* About section */
+.about-title {
+    background-color: #c3332b;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-title-triangle {
+    top: 75px;
+}
+
+.about-text {
+    padding: 150px 50px 100px 50px;
+}
+
+.about a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.about .technologies ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    border-top: 1px solid #fff;
+}
