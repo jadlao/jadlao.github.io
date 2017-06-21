@@ -84,13 +84,10 @@ h1, h3 {
 .triangle {
     position: absolute;
     left: 50%;
-    width: 30px;
-    height: 20px;
-    margin-left: -15px; /* Half the triangle width to keep it centered */
-    background-color: #d2d7d3;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    -moz-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    margin-left: -15px;
+    border-style: solid;
+    border-width: 20px 15px 0 15px;
+    border-color: #d2d7d3 transparent transparent transparent;
 }
 
 .work-title-triangle {
