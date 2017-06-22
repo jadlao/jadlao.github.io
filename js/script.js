@@ -9,13 +9,10 @@ $('a[href^="#"]').on('click', function(event){
     }
 });
 
-// Nav becomes fixed as scroll down
-
-
-
 // Scroll to top arrow appears on scroll up and reaching bottom
 
-// Velocity slide up animations
-$('p, h3, h1').velocity('transition.slideUpBigIn', 1000);
 
-// web network in background gradient canvas
+// Velocity slide up animations
+$('p, h3, h1').velocity('transition.slideUpBigIn', 2000);
+
+// modal

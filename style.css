@@ -23,7 +23,6 @@ h1, h3 {
     background: #eee;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #abb7b7, #eee);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #abb7b7, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 /* Navigation */
@@ -46,19 +45,53 @@ h1, h3 {
     height: 50px;
     margin-top: -10px;
     color: #464646;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
-.nav-links ul li:hover {
-    text-decoration: none;
-    opacity: 0.7;
+.nav-links ul li:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
     background-color: #eee;
-    transition: all .2s ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;   
+}
+
+.nav-links ul li:hover:before {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
 }
 
 /* Intro content */
 .hero {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#particles-js {
+    background-color: #aca4a4;
     height: 500px;
-    padding-top: 150px;
 }
 
 /* Linkedin, Github icons */
@@ -79,6 +112,10 @@ h1, h3 {
     bottom: 0;
     text-align: center;
     padding: 10px;
+}
+
+.work-title h3 {
+    margin-top: 10px;
 }
 
 .triangle {
@@ -106,6 +143,7 @@ h1, h3 {
     transition: all .2s ease-in-out;
     opacity: 0.9;
     border: 0;
+    border-radius: 0;
 }
 
 .work a:hover {
@@ -127,8 +165,12 @@ h1, h3 {
     padding: 10px;
 }
 
+.about-title h3 {
+    margin-top: 10px;
+}
+
 .about-title-triangle {
-    top: 75px;
+    top: 65px;
 }
 
 .about-text {
