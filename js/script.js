@@ -1,3 +1,9 @@
+// Hide arrow to top on page load
+$('.arrow-to-top').hide();
+
+// Scroll to top arrow appears on scroll up and reaching bottom
+
+
 // Click and smooth scroll to id
 $('a[href^="#"]').on('click', function(event){
     var target = $(this.getAttribute('href'));
@@ -9,10 +15,4 @@ $('a[href^="#"]').on('click', function(event){
     }
 });
 
-// Scroll to top arrow appears on scroll up and reaching bottom
-
-
-// Velocity slide up animations
-$('p, h3, h1').velocity('transition.slideUpBigIn', 2000);
-
-// modal
+// Modal transitioning from right side of viewport

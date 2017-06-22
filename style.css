@@ -91,6 +91,9 @@ h1, h3 {
 
 #particles-js {
     background-color: #aca4a4;
+    background: #eee;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #aca4a4, #eee);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #aca4a4, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 500px;
 }
 
@@ -206,4 +209,25 @@ h1, h3 {
     padding: 15px;
     border-top: 1px solid #fff;
     background-color: #d2d7d3;
+}
+
+/* Arrow to top */
+.arrow-to-top {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    visibility: hiden;
+    width: 50px;
+    height: 50px;
+    background-color: #676565;
+}
+
+.arrow-to-top i {
+    margin-top: 6px;
+    color: #fff;
+}
+
+.arrow-to-top:hover {
+    opacity: 0.9;
 }
