@@ -19,12 +19,6 @@ h1, h3 {
     position: relative;
 }
 
-.intro {
-    background: #eee;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #abb7b7, #eee);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #abb7b7, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 /* Navigation */
 .nav-top {
     background-color: #d2d7d3;
@@ -90,10 +84,10 @@ h1, h3 {
 }
 
 #particles-js {
-    background-color: #aca4a4;
+    background-color: #68746b;
     background: #eee;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #aca4a4, #eee);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #aca4a4, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #68746b, #d2d2d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #68746b, #d2d2d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 500px;
 }
 
