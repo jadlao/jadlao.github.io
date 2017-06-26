@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animations.css">
+<!--    <link rel="stylesheet" href="css/animations.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,10 +24,17 @@
                 </div>
             </div>
             
+            <!-- Particles JS animation -->
             <div id="particles-js">
                 <div class="hero text-center">
                     <h1>josef adlao</h1>
                     <br>
+                    <span class="fa-stack fa-lg">
+                        <a href="mailto:josef@josefadlao.com" target="_blank">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </a>
+                    </span>
                     <span class="fa-stack fa-lg">
                         <a href="https://www.linkedin.com/in/josefadlao/" target="_blank">
                             <i class="fa fa-circle fa-stack-2x"></i>
@@ -49,10 +56,11 @@
             <div class="triangle work-title-triangle"></div>
         </div>
         
+        <!-- Portfolio section -->
         <div class="work">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <a href="https://jadlao.github.io/olooqLandingPage/" class="thumbnail" target="_blank">
+                    <a href="https://jadlao.github.io/olooqLandingPage/" class="thumbnail" target="_blank" id="work1">
                         <img class="img-responsive" alt="Olooq landing page" src="img/olooq.png" alt="Portfolio piece">
                     </a>
                     <h4 class="text-center">Olooq Landing Page</h4>
@@ -66,6 +74,12 @@
            </div>
         </div>
         
+        <!-- Portfolio pieces -->
+        <div id="pt-main" class="pt-perspective">
+            <div class="pt-page pt-page-1">Div 1</div>
+        </div>
+        
+        <!-- About section -->
         <div class="about" id="about">
             <div class="about-title">
                 <h3>about</h3>
@@ -89,16 +103,29 @@
                     <p>Bootstrap 3</p>
                 </div>
             </div>
+            <!-- Footer -->
             <div class="footer text-center">
                 &copy; Josef Adlao 2017
             </div>
         </div>
         
-        <!-- Back to top arrow -->
-        <div class="arrow-to-top" id="arrow-to-top">
+        <!-- Bottom icons -->
+        <div class="bottom-icons">
+        <div class="btm-icons linkedin-icon">
+            <a href="https://www.linkedin.com/in/josefadlao/" target="_blank">
+                <i class="fa fa-linkedin fa-stack-2x"></i>
+            </a>
+        </div>
+        <div class="btm-icons arrow-to-top">
             <a href="#top" id="scrollToTop">
                 <i class="fa fa-angle-up fa-stack-2x"></i>
             </a>
+        </div>
+        <div class="btm-icons github-icon">
+            <a href="https://github.com/jadlao" target="_blank">
+                <i class="fa fa-github fa-stack-2x"></i>
+            </a>
+        </div>
         </div>
     </div>
     

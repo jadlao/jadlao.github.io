@@ -12,13 +12,13 @@ $(window).scroll(function(){
     // Arrow to top appears on reaching bottom of page    
     if($(this).scrollBottom() == 0 && !arrowVisible){
         //console.log('reached bottom');
-        $('.arrow-to-top').velocity({
+        $('.btm-icons').velocity({
             bottom: '+0'
         });
         arrowVisible = true;
     }else if($(this).scrollBottom() > 100 && arrowVisible){
         //console.log(scrolled);
-        $('.arrow-to-top').velocity({
+        $('.btm-icons').velocity({
             bottom: '-50px'
         });
         arrowVisible = false;
@@ -44,4 +44,11 @@ $('#scrollToWork').scroll2();
 $('#scrollToAbout').scroll2();
 $('#scrollToTop').scroll2();
 
-// Portfolio item transition from right side of viewport
+// Portfolio item transitions
+function pageAnimate(){
+    $('#pt-main').find('.pt-page-1').addClass('pt-page-current pt-page-moveFromRight');
+};
+
+$('#work1').on('click', function(){
+    pageAnimate();
+});
