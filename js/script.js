@@ -1,18 +1,47 @@
-// Hide arrow to top on page load
-$('.arrow-to-top').hide();
+// Set Boolean
+var arrowVisible = false;
 
-// Scroll to top arrow appears on scroll up and reaching bottom
-
-
-// Click and smooth scroll to id
-$('a[href^="#"]').on('click', function(event){
-    var target = $(this.getAttribute('href'));
-    if(target.length){
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top 
-        }, 1000);
+$(window).scroll(function(){
+    
+    // Scroll bottom function
+    $.fn.scrollBottom = function(){
+    //console.log($(document).height() - this.scrollTop() - this.height());
+    return $(document).height() - this.scrollTop() - this.height();
+};
+    
+    // Arrow to top appears on reaching bottom of page    
+    if($(this).scrollBottom() == 0 && !arrowVisible){
+        //console.log('reached bottom');
+        $('.arrow-to-top').velocity({
+            bottom: '+0'
+        });
+        arrowVisible = true;
+    }else if($(this).scrollBottom() > 100 && arrowVisible){
+        //console.log(scrolled);
+        $('.arrow-to-top').velocity({
+            bottom: '-50px'
+        });
+        arrowVisible = false;
     }
 });
 
-// Modal transitioning from right side of viewport
+// Smooth scroll function using Velocity JS
+$.fn.scroll2 = function(speed){
+    var destination = $(this).attr('href');
+    
+    $(this).on('click', function(e){
+        console.log('e');
+        e.preventDefault();
+        $(destination).velocity('scroll',{
+            duration: speed || 1000,
+            easing: 'ease-in-out-sine'
+        });
+    })
+}
+
+// Enable smooth scroll
+$('#scrollToWork').scroll2();
+$('#scrollToAbout').scroll2();
+$('#scrollToTop').scroll2();
+
+// Portfolio item transition from right side of viewport
