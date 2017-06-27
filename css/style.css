@@ -6,6 +6,7 @@ html, body {
     letter-spacing: 0.05em;
     color: #464646;
     background-color: #fff;
+    height: 100%;
 }
 
 h1, h3 {
@@ -158,6 +159,18 @@ h1, h3 {
 }
 
 /* Portfolio item pages */
+.fa-times-thin:before {
+	content: '\00d7';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5em;
+    color: #464646;
+}
+.fa-times-thin:hover {
+    opacity: 0.7;
+}
+
 .pt-perspective {
     position: relative;
     width: 100%;
@@ -165,6 +178,7 @@ h1, h3 {
     -webkit-perspective: 1200px;
     -moz-perspective: 1200px;
     perspective: 1200px;
+    z-index: 9999;
 }
 
 .pt-page {
@@ -190,16 +204,24 @@ h1, h3 {
 .no-js .pt-page {
     visibility: visible;
     z-index: 1;
+    padding: 100px 50px 100px 50px;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.pt-page-1 {
-    background: #0ac2d2;
+.pt-page-1, .pt-page-2 {
+    background: #eee;
+}
+
+#pt-main img {
+    width: 600px;
 }
 
 /* Page Animations */
 .pt-page-moveFromRight {
-    -webkit-animation: moveFromRight .6s ease both;
-    animation: moveFromRight .6s ease both;
+    -webkit-animation: moveFromRight 1s ease both;
+    animation: moveFromRight 1s ease both;
 }
 @-webkit-keyframes moveFromRight {
     from { -webkit-transform: translateX(100%); }

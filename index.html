@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--    <link rel="stylesheet" href="css/animations.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,13 +59,13 @@
         <div class="work">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <a href="https://jadlao.github.io/olooqLandingPage/" class="thumbnail" target="_blank" id="work1">
+                    <a href="#" class="thumbnail" onclick="pageAnimate(1)">
                         <img class="img-responsive" alt="Olooq landing page" src="img/olooq.png" alt="Portfolio piece">
                     </a>
                     <h4 class="text-center">Olooq Landing Page</h4>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <a href="https://jadlao.github.io/randomQuote/" class="thumbnail" target="_blank">
+                    <a href="#" class="thumbnail" onclick="pageAnimate(2)">
                         <img class="img-responsive" alt="Random quote machine" src="img/quotemachine.png" alt="Portfolio piece">
                     </a>
                     <h4 class="text-center">Random Quote Machine</h4>
@@ -76,7 +75,37 @@
         
         <!-- Portfolio pieces -->
         <div id="pt-main" class="pt-perspective">
-            <div class="pt-page pt-page-1">Div 1</div>
+            <div class="pt-page pt-page-1">
+                <a href="#" onclick="pageClose(1)">
+                    <i class="fa fa-times-thin fa-2x close" aria-hidden="true"></i>
+                </a>
+                <div class="col-xs-3">
+                    <h1>Olooq Landing Page</h1>
+                    <p><a href="https://jadlao.github.io/olooqLandingPage/">Full site</a></p>
+                    <p><a href="https://github.com/jadlao/olooqLandingPage">Github repo</a></p>
+                    <br>
+                    <p>Olooq was designed as a landing page for a organic products comparison website.</p>
+                </div>
+                <div class="col-xs-9">
+                    <img src="img/olooq.png">
+                </div>
+            </div>
+            
+            <div class="pt-page pt-page-2">
+                <a href="#" onclick="pageClose(2)">
+                    <i class="fa fa-times-thin fa-2x close" aria-hidden="true"></i>
+                </a>
+                <div class="col-xs-3">
+                    <h1>Random Quote Machine</h1>
+                    <p><a href="https://jadlao.github.io/randomQuote/">Full site</a></p>
+                    <p><a href="https://github.com/jadlao/randomQuote">Github repo</a></p>
+                    <br>
+                    <p>The Random Quote Machine generates new quotes with every click. </p>
+                </div>
+                <div class="col-xs-9">
+                    <img src="img/quotemachine.png">
+                </div>
+            </div>
         </div>
         
         <!-- About section -->
@@ -129,6 +158,7 @@
         </div>
     </div>
     
+    <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>

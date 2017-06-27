@@ -30,7 +30,6 @@ $.fn.scroll2 = function(speed){
     var destination = $(this).attr('href');
     
     $(this).on('click', function(e){
-        console.log('e');
         e.preventDefault();
         $(destination).velocity('scroll',{
             duration: speed || 1000,
@@ -45,10 +44,31 @@ $('#scrollToAbout').scroll2();
 $('#scrollToTop').scroll2();
 
 // Portfolio item transitions
-function pageAnimate(){
-    $('#pt-main').find('.pt-page-1').addClass('pt-page-current pt-page-moveFromRight');
+function pageAnimate(item){
+    $('.container-fluid').hide();
+    $('#pt-main').show().appendTo('body');
+    var current = $('#pt-main');
+    switch (item){
+        case 1:
+            current.find('.pt-page-1').addClass('pt-page-current pt-page-moveFromRight');
+            break;
+        case 2:
+            current.find('.pt-page-2').addClass('pt-page-current pt-page-moveFromRight');
+            break;
+    }
 };
 
-$('#work1').on('click', function(){
-    pageAnimate();
-});
+// On click, exit portfolio item
+function pageClose(item){
+    var curr = $('#pt-main');
+    switch (item){
+        case 1: 
+            curr.find('.pt-page-1').removeClass('pt-page-current pt-page-moveFromRight');
+            break;
+        case 2:
+            curr.find('.pt-page-2').removeClass('pt-page-current pt-page-moveFromRight');
+            break;
+    }
+    $('.container-fluid').fadeIn();
+    $('#pt-main').hide();
+}
