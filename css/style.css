@@ -9,7 +9,7 @@ html, body {
     height: 100%;
 }
 
-h1, h3 {
+h1, h2, h3 {
     font-family: 'Alegreya Sans SC';
     letter-spacing: 0.15em;
 }
@@ -168,7 +168,7 @@ h1, h3 {
     color: #464646;
 }
 .fa-times-thin:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .pt-perspective {
@@ -178,7 +178,7 @@ h1, h3 {
     -webkit-perspective: 1200px;
     -moz-perspective: 1200px;
     perspective: 1200px;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .pt-page {
@@ -203,15 +203,25 @@ h1, h3 {
 .pt-page-current,
 .no-js .pt-page {
     visibility: visible;
-    z-index: 1;
     padding: 100px 50px 100px 50px;
-    position: relative;
-    height: 100%;
-    width: 100%;
 }
 
 .pt-page-1, .pt-page-2 {
     background: #eee;
+}
+
+.pt-page a {
+    color: #73C5E8;
+}
+
+.pt-page a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.pt-page {
+    line-height: 1.5;
 }
 
 /* Page Animations */
