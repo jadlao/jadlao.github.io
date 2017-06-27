@@ -214,10 +214,6 @@ h1, h3 {
     background: #eee;
 }
 
-#pt-main img {
-    width: 600px;
-}
-
 /* Page Animations */
 .pt-page-moveFromRight {
     -webkit-animation: moveFromRight 1s ease both;
