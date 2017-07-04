@@ -159,6 +159,8 @@ h1, h2, h3 {
 }
 
 /* Portfolio item pages */
+
+/* Exit icon */
 .fa-times-thin:before {
 	content: '\00d7';
     position: absolute;
@@ -204,6 +206,7 @@ h1, h2, h3 {
 .no-js .pt-page {
     visibility: visible;
     padding: 100px 50px 100px 50px;
+    overflow: scroll;
 }
 
 .pt-page-1, .pt-page-2 {
@@ -224,16 +227,21 @@ h1, h2, h3 {
     line-height: 1.5;
 }
 
-/* Page Animations */
-.pt-page-moveFromRight {
-    -webkit-animation: moveFromRight 1s ease both;
-    animation: moveFromRight 1s ease both;
+/* Page transition animations */
+.slidein-from-right {
+    animation: slidein-from-right 500ms;
 }
-@-webkit-keyframes moveFromRight {
-    from { -webkit-transform: translateX(100%); }
-}
-@keyframes moveFromRight {
-    from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+@keyframes slidein-from-right {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
 }
 
 /* About section */

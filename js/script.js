@@ -50,10 +50,10 @@ function pageAnimate(item){
     var current = $('#pt-main');
     switch (item){
         case 1:
-            current.find('.pt-page-1').addClass('pt-page-current pt-page-moveFromRight');
+            current.find('.pt-page-1').addClass('pt-page-current slidein-from-right');
             break;
         case 2:
-            current.find('.pt-page-2').addClass('pt-page-current pt-page-moveFromRight');
+            current.find('.pt-page-2').addClass('pt-page-current slidein-from-right');
             break;
     }
 };
@@ -63,10 +63,10 @@ function pageClose(item){
     var curr = $('#pt-main');
     switch (item){
         case 1: 
-            curr.find('.pt-page-1').removeClass('pt-page-current pt-page-moveFromRight');
+            curr.find('.pt-page-1').removeClass('pt-page-current slidein-from-right');
             break;
         case 2:
-            curr.find('.pt-page-2').removeClass('pt-page-current pt-page-moveFromRight');
+            curr.find('.pt-page-2').removeClass('pt-page-current slidein-from-right');
             break;
     }
     $('.container-fluid').fadeIn();
