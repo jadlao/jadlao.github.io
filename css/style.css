@@ -229,12 +229,12 @@ h1, h2, h3 {
 
 /* Page transition animations */
 .slidein-from-right {
-    animation: slidein-from-right 500ms;
+    animation: slidein-from-right 800ms;
 }
 @keyframes slidein-from-right {
     from {
         margin-left: 100%;
-        width: 300%;
+        width: 100%;
         opacity: 0;
     }
     to {
