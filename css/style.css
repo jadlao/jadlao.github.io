@@ -142,6 +142,7 @@ h1, h2, h3 {
     background-color: #eee;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 10px;
     transition: all .2s ease-in-out;
     opacity: 0.9;
     border: 0;
@@ -210,7 +211,7 @@ h1, h2, h3 {
     height: auto;
 }
 
-.pt-page-1, .pt-page-2 {
+.pt-page-1, .pt-page-2, .pt-page-3 {
     background: #eee;
     display: block;
 }

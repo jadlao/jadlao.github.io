@@ -55,6 +55,10 @@ function pageAnimate(item){
         case 2:
             current.find('.pt-page-2').addClass('pt-page-current slidein-from-right');
             break;
+        case 3:
+            current.find('.pt-page-3').addClass('pt-page-current slidein-from-right');
+            break;
+            
     }
 };
 
@@ -67,6 +71,9 @@ function pageClose(item){
             break;
         case 2:
             curr.find('.pt-page-2').removeClass('pt-page-current slidein-from-right');
+            break;
+        case 3:
+            curr.find('.pt-page-3').removeClass('pt-page-current slidein-from-right');
             break;
     }
     $('.container-fluid').fadeIn();
