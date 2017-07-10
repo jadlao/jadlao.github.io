@@ -212,6 +212,7 @@ h1, h2, h3 {
 
 .pt-page-1, .pt-page-2 {
     background: #eee;
+    display: block;
 }
 
 .pt-page a {
