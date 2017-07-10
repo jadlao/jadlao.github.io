@@ -207,6 +207,7 @@ h1, h2, h3 {
     visibility: visible;
     padding: 100px 50px 100px 50px;
     overflow: auto;
+    height: auto;
 }
 
 .pt-page-1, .pt-page-2 {
