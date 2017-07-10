@@ -206,7 +206,7 @@ h1, h2, h3 {
 .no-js .pt-page {
     visibility: visible;
     padding: 100px 50px 100px 50px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .pt-page-1, .pt-page-2 {
@@ -229,15 +229,46 @@ h1, h2, h3 {
 
 /* Page transition animations */
 .slidein-from-right {
+    -webkit-animation: slidein-from-right 800ms;
+    -moz-animation: slidein-from-right 800ms;
     animation: slidein-from-right 800ms;
 }
+
 @keyframes slidein-from-right {
     from {
         margin-left: 100%;
+        height: 100%;
         opacity: 0;
     }
     to {
         margin-left: 0%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slidein-from-right {
+    from {
+        margin-left: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slidein-from-right {
+    from {
+        margin-left: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        height: 100%;
         opacity: 1;
     }
 }
