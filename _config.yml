@@ -19,6 +19,8 @@ markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /blog/posts/:year-:month/:title
+sass: 
+  sass_dir: _sass
 
 kramdown:
   auto_ids: true
