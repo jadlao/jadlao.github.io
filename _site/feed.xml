@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Josef Adlao | Blog</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 22 Aug 2017 20:10:14 +1000</pubDate>
+    <lastBuildDate>Tue, 22 Aug 2017 20:10:14 +1000</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>projects update</title>
+        <description>&lt;p&gt;Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Aug 2017 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/posts/2017-08/project-update</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/posts/2017-08/project-update</guid>
+        
+        
+        <category>projects</category>
+        
+      </item>
+    
+  </channel>
+</rss>
