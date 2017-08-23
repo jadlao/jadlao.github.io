@@ -7,9 +7,4 @@ categories: [projects]
 comments: true
 ---
 
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
-Sample text lkjfaskldfj;lsdkjfa;lsjfdl;sf
+Sample text
