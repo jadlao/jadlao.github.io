@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reflections on the Wikipedia Viewer & Itunes Song Listener"
+title:  "Thoughts on the Wikipedia Viewer & Itunes Song Listener"
 excerpt: "My thoughts on this project, what I learned, and what 
 challenges I encountered."
 categories: [projects]
