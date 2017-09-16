@@ -310,6 +310,7 @@ h1, h2, h3 {
 
 .about-text h3 span {
     border-bottom: 2px solid #73C5E8;
+    line-height: 1.5;
 }
 
 .about-text h3 span:hover {
