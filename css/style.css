@@ -140,24 +140,19 @@ h1, h2, h3 {
 }
 
 .work a {
-    background-color: #eee;
+    background-color: #fff;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 10px;
     transition: all .2s ease-in-out;
     opacity: 0.9;
-    border: 0;
+    border: 1px solid #eee;
     border-radius: 0;
 }
 
 .work a:hover {
     transform: scale(1.02);
     opacity: 1;
-}
-
-.work img {
-    height: 300px;
-    width: 300px;
 }
 
 /* Portfolio item pages */
