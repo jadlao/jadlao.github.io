@@ -153,6 +153,7 @@ h1, h2, h3 {
 .work a:hover {
     transform: scale(1.02);
     opacity: 1;
+    border-color: #d2d7d3;
 }
 
 /* Portfolio item pages */
