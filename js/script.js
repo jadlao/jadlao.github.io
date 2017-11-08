@@ -64,6 +64,9 @@ function pageAnimate(item){
         case 5:
             current.find('.pt-page-5').addClass('pt-page-current slidein-from-right');
             break;
+        case 6:
+            current.find('.pt-page-6').addClass('pt-page-current slidein-from-right');
+            break;
         case 10:
             current.find('.pt-page-10').addClass('pt-page-current slidein-from-right');
             current.css('background', '#eee');
@@ -89,6 +92,9 @@ function pageClose(item){
             break;
         case 5:
             curr.find('.pt-page-5').removeClass('pt-page-current slidein-from-right');
+            break;
+        case 6:
+            curr.find('.pt-page-6').removeClass('pt-page-current slidein-from-right');
             break;
         case 10:
             curr.find('.pt-page-10').removeClass('pt-page-current slidein-from-right');
