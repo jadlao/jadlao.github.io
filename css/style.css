@@ -236,12 +236,12 @@ h1, h2, h3 {
 
 @keyframes slidein-from-right {
     from {
-        margin-left: 100%;
+        transform: translate3d(100%, 0, 0);
         height: 100%;
         opacity: 0;
     }
     to {
-        margin-left: 0%;
+        transform: translate3d(0, 0, 0);
         height: 100%;
         opacity: 1;
     }
@@ -249,12 +249,12 @@ h1, h2, h3 {
 
 @-webkit-keyframes slidein-from-right {
     from {
-        margin-left: 100%;
+        transform: translate3d(100%, 0, 0);
         height: 100%;
         opacity: 0;
     }
     to {
-        margin-left: 0%;
+        transform: translate3d(0, 0, 0);
         height: 100%;
         opacity: 1;
     }
@@ -262,12 +262,12 @@ h1, h2, h3 {
 
 @-moz-keyframes slidein-from-right {
     from {
-        margin-left: 100%;
+        transform: translate3d(100%, 0, 0);
         height: 100%;
         opacity: 0;
     }
     to {
-        margin-left: 0%;
+        transform: translate3d(0, 0, 0);
         height: 100%;
         opacity: 1;
     }
