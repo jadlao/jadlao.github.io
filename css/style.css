@@ -78,6 +78,9 @@ h3 {
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
 }
+.nav-links a:hover {
+  text-decoration: none;
+}
 
 /* Intro content */
 .hero {
