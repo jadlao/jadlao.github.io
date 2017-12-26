@@ -238,12 +238,12 @@ h3 {
 
 .pt-page a {
   color: #73c5e8;
+  transition: all 0.2s ease-in-out;
 }
 
 .pt-page a:hover {
   opacity: 0.7;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
 }
 
 .pt-page {
@@ -319,22 +319,22 @@ h3 {
 
 .about a {
   color: #73c5e8;
+  transition: all 0.2s ease-in-out;
 }
 
 .about a:hover {
   text-decoration: none;
   opacity: 0.7;
-  transition: all 0.2s ease-in-out;
 }
 
 .about-text h3 span {
   border-bottom: 2px solid #73c5e8;
   line-height: 1.5;
+  transition: all 0.2s ease-in-out;
 }
 
 .about-text h3 span:hover {
   border-bottom: 2px solid #bfdfed;
-  transition: all 0.2s ease-in-out;
 }
 
 .about .technologies ul li {
