@@ -1,4 +1,4 @@
 # Portfolio site
-My portfolio website with my personal projects and blog.
+My portfolio website with my personal projects.
 
-Stack: Bootstrap, jQuery, velocity.js, particles.js, Jekyll
+Stack: React
